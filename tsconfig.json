@@ -3,11 +3,15 @@
     "lib": ["es2020", "dom"],
     "module": "commonjs",
     "target": "es2020",
-
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["src/*"]
+    },
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node"
-  }
+  },
+  "exclude": ["src/old-src"]
 }
